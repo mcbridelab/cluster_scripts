@@ -12,7 +12,7 @@
    to the end of the file (it may be empty if you've never edited it before). This tells the system to look for scripts in the shared lab directory first.
    3. You'll have to press `CTRL-X` then `Y` to save your changes.
 
-* Use [git](https://guides.github.com/introduction/git-handbook/) to upload any new scripts or track and modifications you make. Here's a quick [tutorial](https://www.katacoda.com/courses/git).
+* Use [git](https://guides.github.com/introduction/git-handbook/) to upload any new scripts or track any modifications you make. Here's a quick [tutorial](https://www.katacoda.com/courses/git).
 
 * These are mostly bash scripts (.sh) that can be run on the cluster using slurm. That means they should generally start with `#!/bin/bash` often followed by instructions for the slurm scheduler e.g. `#SBATCH -N1 -c1 -t2:00:00`. After that, leave a line explaining how to use the script, and another with the name of the author. For example:
 ```
