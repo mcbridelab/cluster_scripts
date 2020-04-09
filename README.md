@@ -23,4 +23,4 @@ echo "Hello $1"
 ```
 Note: if you write a new script you will have to [make it executable](https://stackoverflow.com/questions/8779951/how-do-i-run-a-shell-script-without-using-sh-or-bash-commands) to run without calling bash directly
 
-If you are putting together a more complicated pipeline involving multiple scripts, consider documenting it in a markdown file like this. Look at the code generating this README for examples of how to use markdown to document a series of steps, or use this [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links)
+If you are putting together a more complicated pipeline involving multiple scripts, consider documenting it in a markdown file like this. Look at the code generating this README for examples of how to use markdown to document a series of steps, or use this [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links).
