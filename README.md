@@ -9,8 +9,8 @@
    `nano ~/.bashrc`
    2. Add 
    `export PATH=~/cluster_scripts:$PATH`
-   to the end of the file (it may be empty if you've never edited it before).
-   3. You'll have to press `CTRL-X` then `Y` to save your changes. This tells the system to look for scripts in the shared lab directory first.
+   to the end of the file (it may be empty if you've never edited it before). This tells the system to look for scripts in the shared lab directory first.
+   3. You'll have to press `CTRL-X` then `Y` to save your changes.
 
 * Use [git](https://guides.github.com/introduction/git-handbook/) to upload any new scripts or track and modifications you make. Here's a quick [tutorial](https://www.katacoda.com/courses/git).
 
