@@ -1,6 +1,6 @@
 ## McBride Lab scripts
 
-To download this repository (e.g. in your home directory):
+To download this repository (e.g. in your home directory on the cluster):
 `git clone https://github.com/mcbridelab/cluster_scripts.git`
 
 Then add it to the PATH in to your [bashrc](https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work) file to make sure you can use the scripts, as follows: 
