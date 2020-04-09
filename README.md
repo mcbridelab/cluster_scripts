@@ -21,3 +21,4 @@ These are mostly bash scripts (.sh) that can be run on the cluster using slurm. 
 #by Noah Rose
 echo "Hello $1"
 ```
+Note: if you write a new script you will have to [make it executable](https://stackoverflow.com/questions/8779951/how-do-i-run-a-shell-script-without-using-sh-or-bash-commands) to run without calling bash directly
