@@ -17,7 +17,7 @@ These are mostly bash scripts (.sh) that can be run on the cluster using slurm. 
 ```
 #!/bin/bash
 #SBATCH -N1 -c1 -t2:00:00
-#Usage hello.sh NAME
+#Usage: hello.sh NAME
 #by Noah Rose
 echo "Hello $1"
 ```
