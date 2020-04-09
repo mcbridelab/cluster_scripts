@@ -5,11 +5,12 @@
 
 * Then add it to the PATH in to your [bashrc](https://unix.stackexchange.com/questions/129143/what-is-the-purpose-of-bashrc-and-how-does-it-work) file to make sure you can use the scripts, as follows: 
 
-   Use nano to open the file
+   1. Use nano to open the file
    `nano ~/.bashrc`
-   and add 
+   2. Add 
    `export PATH=~/cluster_scripts:$PATH`
-   to the end of the file (it may be empty if you've never edited it before). You'll have to press `CTRL-X` then `Y` to save your changes. This tells the system to look for scripts in the shared lab directory first.
+   to the end of the file (it may be empty if you've never edited it before).
+   3. You'll have to press `CTRL-X` then `Y` to save your changes. This tells the system to look for scripts in the shared lab directory first.
 
 * Use [git](https://guides.github.com/introduction/git-handbook/) to upload any new scripts or track and modifications you make. Here's a quick [tutorial](https://www.katacoda.com/courses/git).
 
