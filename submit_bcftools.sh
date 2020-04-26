@@ -1,6 +1,9 @@
 #!/bin/bash
 #usage submit_bcftools.sh bamlist.txt ref.fa regions.txt
 #by Noah Rose
+#
+#to generate regions.txt file: use bedtools makewindows function and awk '{print $1":"$2+1"-"$3}'
+
 
 COUNTER=1
 while read i; do

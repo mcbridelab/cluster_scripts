@@ -4,6 +4,7 @@
 #
 #Meta-usage: while read region; do sbatch bcftools_call_region.sh bamlist.txt reference.fa $region ; done < regions.txt
 #Or, to reduce node fragmentation: bash submit_bcftools.sh bamlist.txt reference.fa regions.txt
+#to generate regions.txt file: use bedtools makewindows function and awk '{print $1":"$2+1"-"$3}'
 #
 #Use bcftools concat --naive to combine multiple regions generated from this script
 #
