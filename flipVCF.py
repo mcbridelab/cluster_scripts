@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #this script flips vcf files generated using bcftools consensus reference to a different reference.
 #WARNING: only works on UNPHASED biallelic SNPs, and only for GT, GL, and PL fields
-#USAGE: flipVCF.py vcf reference > out.vcf
+#USAGE: samtools view -Ov your.bcf | flipVCF.py reference | samtools view -Ob > out.bcf
 #by Noah Rose
 
 import sys
