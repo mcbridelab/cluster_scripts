@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 #this script flips vcf files generated using bcftools consensus reference to a different reference.
 #WARNING: only works on UNPHASED biallelic SNPs, and only for GT, GL, and PL fields
-#USAGE: samtools view -Ov your.bcf | flipVCF.py reference | samtools view -Ob > out.bcf
+#USAGE: cat your.vcf | flipVCF.py reference.fa > out.vcf
+#USAGE: samtools view -Ov your.bcf | flipVCF.py reference.fa | samtools view -Ob > out.bcf
 #by Noah Rose
 
 import sys
@@ -75,7 +76,7 @@ for line in sys.stdin:
                 elif currGT == "./.":
                     new = "./."
                 else:
-                    sys.exit("COULD NOT FLIP, EXITING"+currGT)                    
+                    sys.exit("COULD NOT FLIP, EXITING "+currGT)                    
                 sample[GT] = new
                 entry[i] = ":".join(sample)
 
