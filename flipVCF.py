@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 #this script flips vcf files generated using bcftools consensus reference to a different reference.
 #WARNING: only works on UNPHASED biallelic SNPs, and only for GT, GL, and PL fields
+#WARNING: does not update INFO field. Some fields remain correct, others will not.
 #USAGE: cat your.vcf | flipVCF.py reference.fa > out.vcf
 #USAGE: samtools view -Ov your.bcf | flipVCF.py reference.fa | samtools view -Ob > out.bcf
 #by Noah Rose
@@ -80,8 +81,6 @@ for line in sys.stdin:
                 sample[GT] = new
                 entry[i] = ":".join(sample)
 
-        #remove INFO field since we have changed things around (CAUTION NOT TO FILTER NAIVELY ON INFO AFTER USING THIS)
-        entry[7]="."
         lineflip = "\t".join(entry)
         out.write(lineflip+"\n")
         continue
