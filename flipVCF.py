@@ -7,17 +7,15 @@
 import sys
 from Bio import SeqIO
 
-vcf = sys.argv[1]
-ref = sys.argv[2]
+ref = sys.argv[1]
 out = sys.stdout
 err = sys.stderr
 
-err.write("setting reference alleles in "+vcf+" to reference "+ref+"\n")
+err.write("setting reference alleles in stdin to reference "+ref+"\n")
 ref_dict = SeqIO.to_dict(SeqIO.parse(ref, "fasta"))
 
-v = open(vcf,"r")
 
-for line in v:
+for line in sys.stdin:
 
     #skip header lines
     if line.startswith("#"):
@@ -91,4 +89,3 @@ for line in v:
         err.write("COULD NOT RESOLVE, SKIPPING "+debug)
         continue
 
-v.close()
