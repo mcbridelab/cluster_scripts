@@ -15,17 +15,17 @@
 //Number of migration matrices : 0 implies no migration between demes
 3
 //Migration matrix 0
-0	7.156044358750787e-04	0
-4.054863845297352e-05	0	1.350490520219188e-04
-0	7.296473810836942e-05	0
+0 7.156044358750787e-04 0
+4.054863845297352e-05 0 1.350490520219188e-04
+0 7.296473810836942e-05 0
 //Migration matrix 1
-0	0	0
-0	0	1.350490520219188e-04
-0	7.296473810836942e-05	0
+0 0 0
+0 0 1.350490520219188e-04
+0 7.296473810836942e-05 0
 //Migration matrix 2
-0	0	0
-0	0	0
-0	0	0
+0 0 0
+0 0 0
+0 0 0
 //historical event: time, source, sink, migrants, new deme size, new growth rate, migration matrix index
 3 historical event
 3806 0 0 0 1.264071291158833e-01 0 0
