@@ -1,0 +1,24 @@
+// Priors and rules file
+// *********************
+[PARAMETERS]
+//#isInt? #name #dist.#min #max
+//all Ns are in number of haploid individuals
+1 NBTT logunif 1e2 1e8 output
+1 NBKK logunif 1e2 1e8 output
+1 NNGO logunif 1e2 1e8 output
+1 TOINVADE logunif 10 1000 output
+1 TODIV logunif 1000 1000000 output
+1 TGROW logunif 100 10000 output
+0 R1 logunif 0.1 10 output
+0 R2 logunif 0.1 10 output
+0 R3 logunif 0.1 10 output
+0 M12 logunif 1e-6 1e-2 output
+0 M21 logunif 1e-6 1e-2 output
+0 M01 logunif 1e-6 1e-2 output
+0 M10 logunif 1e-6 1e-2 output
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+0 TINVADE = TGROW+TOINVADE hide
+0 TDIV = TINVADE+TODIV hide
